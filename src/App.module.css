@@ -1,0 +1,37 @@
+.main {
+  width: 100%;
+}
+
+section,
+article {
+  border: 1px solid grey;
+}
+
+.section {
+  display: flex;
+}
+
+.section1 {
+  width: 50%;
+}
+
+.inner-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  section {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+.articles {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  article {
+    width: 100%;
+  }
+}
