@@ -1,6 +1,7 @@
 .tooltip {
   display: initial;
   position: relative;
+  max-width: 300px;
 
   .icon {
     margin-left: 8px;

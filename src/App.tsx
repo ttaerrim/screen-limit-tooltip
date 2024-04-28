@@ -14,7 +14,7 @@ function App() {
               {[1, 2, 3, 4].map((item) => (
                 <article key={item}>
                   article {item}
-                  <Tooltip title='tooltip title ' message={['this is tooltip message']} />
+                  <Tooltip title='tooltip title ' message={['this is tooltip message and tooltip has limited width']} />
                 </article>
               ))}
             </div>
