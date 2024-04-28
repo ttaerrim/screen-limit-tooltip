@@ -5,6 +5,7 @@
   .icon {
     margin-left: 8px;
   }
+
   &:hover .tooltip,
   &:hover .arrow {
     visibility: visible;
