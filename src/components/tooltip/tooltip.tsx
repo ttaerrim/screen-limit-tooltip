@@ -28,7 +28,7 @@ export const Tooltip = ({ message, title }: Props) => {
   }, [offsetX, screenWidth]);
 
   return (
-    <div className={styles.tooltip} onMouseOver={(e) => setOffsetX(e.currentTarget.offsetLeft)}>
+    <div className={styles.tooltip} onMouseOver={(e) => setOffsetX(e.currentTarget.getBoundingClientRect().left)}>
       <img className={styles['icon']} src={IconQna} alt='tooltip icon' width={16} height={16} />
       <div className={styles['arrow']} />
       <div style={{ left: leftX > 0 ? `-${leftX}px` : '0' }} className={styles['tooltip']} ref={tooltipRef}>
